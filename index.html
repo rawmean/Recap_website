@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recap — Instant Scene Context for Movies & TV</title>
+    <meta name="description"
+        content="Pause any movie or TV show, snap a photo, and get an instant spoiler-safe recap of what just happened. Powered by AI.">
+    <link rel="icon" type="image/png" href="images/app-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">
+                <img src="images/app-icon.png" alt="Recap app icon" class="nav-icon">
+                <span>Recap</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#share-extension">Share Extension</a></li>
+                <li><a href="#privacy">Privacy</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-glow"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+
+                <h1>Never lose track of<br><span class="gradient-text">what just happened</span></h1>
+                <p class="hero-subtitle">Pause any movie or TV show, snap a photo of your screen, and get an instant,
+                    spoiler-safe explanation of exactly what's going on — powered by AI.</p>
+                <div class="hero-cta-group">
+                    <a href="#how-it-works" class="btn btn-primary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <circle cx="12" cy="12" r="10" />
+                            <polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none" />
+                        </svg>
+                        See How It Works
+                    </a>
+                    <a href="#features" class="btn btn-secondary">Explore Features</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="phone-frame">
+                    <div class="phone-notch"></div>
+                    <img src="images/screenshot-analysis.png" alt="Recap app showing scene analysis of No Time to Die"
+                        class="phone-screenshot">
+                </div>
+                <div class="floating-card floating-card-1">
+                    <div class="floating-card-icon">🎬</div>
+                    <div>
+                        <strong>No Time to Die</strong>
+                        <span>Confidence: 1.00</span>
+                    </div>
+                </div>
+                <div class="floating-card floating-card-2">
+                    <div class="floating-card-icon">✨</div>
+                    <div>
+                        <strong>Scene analyzed</strong>
+                        <span>Spoiler-safe recap ready</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Features</span>
+                <h2>Everything you need to<br><span class="gradient-text">understand any scene</span></h2>
+                <p class="section-description">Recap uses state-of-the-art AI to identify what you're watching and
+                    deliver the context you need — without spoiling what comes next.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card feature-card-spotlight">
+                    <div class="feature-icon-wrapper feature-icon-blue">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" />
+                            <line x1="8" y1="21" x2="16" y2="21" />
+                            <line x1="12" y1="17" x2="12" y2="21" />
+                            <polygon points="10 7 10 13 15 10" fill="currentColor" stroke="none" />
+                        </svg>
+                    </div>
+                    <h3>Find Context Instantly</h3>
+                    <p>Recap identifies what you are watching and explains exactly what just happened without spoiling
+                        future moments.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper feature-icon-teal">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                            <circle cx="12" cy="13" r="4" />
+                        </svg>
+                    </div>
+                    <h3>Camera or Library</h3>
+                    <p>Snap a photo directly with your camera or pick an image from your photo library — whatever's
+                        easiest.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper feature-icon-amber">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                        </svg>
+                    </div>
+                    <h3>Ask Follow-up Questions</h3>
+                    <p>After analysis, ask specific questions about the current moment to get quick, spoiler-safe
+                        clarification.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper feature-icon-rose">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            <polyline points="9 12 11 14 15 10" />
+                        </svg>
+                    </div>
+                    <h3>Spoiler-Safe</h3>
+                    <p>Configurable spoiler modes ensure you only see context up to the exact moment you paused —
+                        nothing beyond.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper feature-icon-indigo">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="11" cy="11" r="8" />
+                            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                        </svg>
+                    </div>
+                    <h3>Grounded in Facts</h3>
+                    <p>Results are backed by Google Search grounding for accurate episode, character, and plot
+                        information.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper feature-icon-emerald">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                            <path d="M16 7V5a4 4 0 0 0-8 0v2" />
+                        </svg>
+                    </div>
+                    <h3>Rich Scene Details</h3>
+                    <p>Get what just happened, recent revelations, relevant backstory, why the scene matters, and source
+                        links — all in one tap.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="section how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">How It Works</span>
+                <h2>Three simple steps to<br><span class="gradient-text">your perfect recap</span></h2>
+            </div>
+
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Capture the Right Frame</h3>
+                        <p>Pause the TV or movie and include the show or movie title plus the on-screen timestamp in
+                            your snapshot for accurate results.</p>
+                    </div>
+                    <div class="step-visual">
+                        <img src="images/screenshot-capture.png" alt="Capturing a paused scene from a TV"
+                            class="step-image">
+                    </div>
+                </div>
+
+                <div class="step-connector">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Analyze the Scene</h3>
+                        <p>Tap "Analyze Scene" and let AI identify the movie or show, then stream a detailed,
+                            spoiler-safe recap of everything up to that exact moment.</p>
+                    </div>
+                    <div class="step-visual">
+                        <img src="images/screenshot-result.png" alt="Recap showing scene identification and context"
+                            class="step-image">
+                    </div>
+                </div>
+
+                <div class="step-connector">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Ask Follow-up Questions</h3>
+                        <p>Still confused? Ask specific questions about the current moment and get quick, safe
+                            clarification without rewinding.</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="followup-demo">
+                            <div class="demo-question">
+                                <span class="demo-label">Q:</span>
+                                <span>Who is the villain in this scene?</span>
+                            </div>
+                            <div class="demo-answer">
+                                <span class="demo-label">A:</span>
+                                <span>Safin, played by Rami Malek, is the primary antagonist. He developed a bioweapon
+                                    called Heracles that targets specific DNA…</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Share Extension Section -->
+    <section class="section share-extension" id="share-extension">
+        <div class="container">
+            <div class="share-extension-layout">
+                <div class="share-extension-content">
+                    <span class="section-tag">Share Extension</span>
+                    <h2>Analyze scenes <span class="gradient-text">without opening the app</span></h2>
+                    <p>Recap includes a powerful Share Extension. Select any image from your Photos, Safari, or any
+                        other app, tap the <strong>Share</strong> button, choose <strong>Recap</strong>, and the scene
+                        will be analyzed automatically — no need to launch the app first.</p>
+                    <div class="share-benefits">
+                        <div class="share-benefit">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span>Works from Photos, Safari, Messages, and more</span>
+                        </div>
+                        <div class="share-benefit">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span>No need to switch apps — analyze right from the share sheet</span>
+                        </div>
+                        <div class="share-benefit">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span>Scene analysis starts automatically once you share the image</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="share-extension-visual">
+                    <div class="phone-frame phone-frame-share">
+                        <div class="phone-notch"></div>
+                        <img src="images/screenshot-share.png" alt="iOS Share Sheet showing Recap app as an option"
+                            class="phone-screenshot">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Section -->
+    <section class="section privacy" id="privacy">
+        <div class="container">
+            <div class="privacy-card">
+                <div class="privacy-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        <path d="M9 12l2 2 4-4" />
+                    </svg>
+                </div>
+                <h2>Your privacy matters</h2>
+                <p class="privacy-subtitle">We believe your data is yours. Here's how Recap handles your images.</p>
+
+                <div class="privacy-details">
+                    <div class="privacy-item">
+                        <div class="privacy-item-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M3 6h18" />
+                                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6" />
+                                <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>No Storage</h4>
+                            <p>We do not store any of the images you provide to this app. Once your analysis is
+                                complete, the image is discarded.</p>
+                        </div>
+                    </div>
+                    <div class="privacy-item">
+                        <div class="privacy-item-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="18" cy="5" r="3" />
+                                <circle cx="6" cy="12" r="3" />
+                                <circle cx="18" cy="19" r="3" />
+                                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+                                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>No Sharing</h4>
+                            <p>We do not share any of the images you provide with any third party beyond the analysis
+                                service.</p>
+                        </div>
+                    </div>
+                    <div class="privacy-item">
+                        <div class="privacy-item-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>AI Processing Only</h4>
+                            <p>Images are shared with a generative AI model (Gemini) solely for the purpose of analyzing
+                                the scene. This is the only context in which your image is transmitted.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contact</span>
+                <h2>Get in touch</h2>
+                <p class="section-description">Have questions, feedback, or need help? We'd love to hear from you.</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                        <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                </div>
+                <h3>Email Us</h3>
+                <p>Reach out and we'll get back to you as soon as possible.</p>
+                <a href="mailto:apps@maadotaa.com?subject=Need%20help%20with%20Recap%20app"
+                    class="btn btn-primary contact-btn" id="contact-email-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                        <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                    Send Us an Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <img src="images/app-icon.png" alt="Recap" class="footer-icon">
+                <span class="footer-name">Recap</span>
+            </div>
+            <div class="footer-links">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#privacy">Privacy</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 Recap. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
