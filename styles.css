@@ -46,7 +46,9 @@
 /* ===========================
    Reset & Base
    =========================== */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -296,8 +298,15 @@ a {
 }
 
 @keyframes pulseGlow {
-    0% { opacity: 0.4; transform: translateX(-50%) scale(1); }
-    100% { opacity: 0.7; transform: translateX(-50%) scale(1.15); }
+    0% {
+        opacity: 0.4;
+        transform: translateX(-50%) scale(1);
+    }
+
+    100% {
+        opacity: 0.7;
+        transform: translateX(-50%) scale(1.15);
+    }
 }
 
 .hero-container {
@@ -345,36 +354,26 @@ a {
     flex-wrap: wrap;
 }
 
-/* Phone Frame */
-.phone-frame {
-    position: relative;
+/* Screenshot Styles */
+.hero-screenshot {
     width: 280px;
     margin: 0 auto;
-    background: #1a1a24;
-    border-radius: 36px;
-    padding: 12px;
-    box-shadow:
-        0 0 0 2px rgba(255, 255, 255, 0.1),
-        0 20px 60px rgba(0,0,0,0.5),
-        0 0 80px var(--color-primary-glow);
-}
-
-.phone-notch {
-    width: 120px;
-    height: 28px;
-    background: #1a1a24;
-    border-radius: 0 0 16px 16px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-}
-
-.phone-screenshot {
-    width: 100%;
-    border-radius: 26px;
+    border-radius: var(--radius-xl);
     display: block;
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.5),
+        0 0 80px var(--color-primary-glow);
+    border: 1px solid var(--color-border);
+}
+
+.share-screenshot {
+    width: 260px;
+    border-radius: var(--radius-xl);
+    display: block;
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.5),
+        0 0 80px var(--color-primary-glow);
+    border: 1px solid var(--color-border);
 }
 
 .hero-visual {
@@ -392,7 +391,7 @@ a {
     border: 1px solid var(--color-border);
     padding: 14px 18px;
     border-radius: var(--radius-md);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     animation: floatCard 4s ease-in-out infinite alternate;
     z-index: 3;
 }
@@ -425,8 +424,13 @@ a {
 }
 
 @keyframes floatCard {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-12px); }
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-12px);
+    }
 }
 
 /* Hero Scroll Indicator */
@@ -440,8 +444,15 @@ a {
 }
 
 @keyframes bounce {
-    0%, 100% { transform: translateX(-50%) translateY(0); }
-    50% { transform: translateX(-50%) translateY(8px); }
+
+    0%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(8px);
+    }
 }
 
 /* ===========================
@@ -479,7 +490,7 @@ a {
     background: var(--color-bg-card-hover);
     border-color: var(--color-border-hover);
     transform: translateY(-4px);
-    box-shadow: 0 16px 48px rgba(0,0,0,0.3);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3);
 }
 
 .feature-card:hover::before {
@@ -496,12 +507,35 @@ a {
     margin-bottom: 20px;
 }
 
-.feature-icon-blue { background: hsla(210, 60%, 55%, 0.15); color: var(--color-blue); }
-.feature-icon-teal { background: hsla(175, 45%, 40%, 0.15); color: var(--color-teal); }
-.feature-icon-amber { background: hsla(38, 85%, 55%, 0.15); color: var(--color-amber); }
-.feature-icon-rose { background: hsla(350, 65%, 55%, 0.15); color: var(--color-rose); }
-.feature-icon-indigo { background: hsla(235, 55%, 60%, 0.15); color: var(--color-indigo); }
-.feature-icon-emerald { background: hsla(155, 50%, 42%, 0.15); color: var(--color-emerald); }
+.feature-icon-blue {
+    background: hsla(210, 60%, 55%, 0.15);
+    color: var(--color-blue);
+}
+
+.feature-icon-teal {
+    background: hsla(175, 45%, 40%, 0.15);
+    color: var(--color-teal);
+}
+
+.feature-icon-amber {
+    background: hsla(38, 85%, 55%, 0.15);
+    color: var(--color-amber);
+}
+
+.feature-icon-rose {
+    background: hsla(350, 65%, 55%, 0.15);
+    color: var(--color-rose);
+}
+
+.feature-icon-indigo {
+    background: hsla(235, 55%, 60%, 0.15);
+    color: var(--color-indigo);
+}
+
+.feature-icon-emerald {
+    background: hsla(155, 50%, 42%, 0.15);
+    color: var(--color-emerald);
+}
 
 .feature-card h3 {
     font-size: 1.15rem;
@@ -542,7 +576,7 @@ a {
 
 .step-card:hover {
     border-color: var(--color-border-hover);
-    box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
 }
 
 .step-number {
@@ -602,7 +636,8 @@ a {
     gap: 14px;
 }
 
-.demo-question, .demo-answer {
+.demo-question,
+.demo-answer {
     display: flex;
     gap: 10px;
     font-size: 0.93rem;
@@ -637,7 +672,7 @@ a {
     margin-bottom: 20px;
 }
 
-.share-extension-content > p {
+.share-extension-content>p {
     font-size: 1.05rem;
     color: var(--color-text-secondary);
     line-height: 1.7;
@@ -664,9 +699,7 @@ a {
     margin-top: 2px;
 }
 
-.phone-frame-share {
-    width: 260px;
-}
+
 
 .share-extension-visual {
     display: flex;
@@ -786,7 +819,7 @@ a {
     margin-bottom: 10px;
 }
 
-.contact-card > p {
+.contact-card>p {
     font-size: 0.95rem;
     color: var(--color-text-secondary);
     margin-bottom: 28px;
@@ -968,11 +1001,11 @@ a {
         display: none;
     }
 
-    .phone-frame {
+    .hero-screenshot {
         width: 240px;
     }
 
-    .phone-frame-share {
+    .share-screenshot {
         width: 220px;
     }
 
