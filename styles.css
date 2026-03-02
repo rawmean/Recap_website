@@ -352,6 +352,24 @@ a {
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
+    align-items: center;
+}
+
+.app-store-badge {
+    display: inline-flex;
+    align-items: center;
+    transition: all var(--transition-fast);
+    border-radius: var(--radius-md);
+}
+
+.app-store-badge img {
+    height: 48px;
+    width: auto;
+}
+
+.app-store-badge:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.15);
 }
 
 /* Screenshot Styles */
